@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dandelion Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8f2;
+      line-height: 1.6;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    .skip {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background-color: #000;
+      color: #fff;
+      padding: 0.5rem 1rem;
+    }
+
+    .skip:focus {
+      left: 1rem;
+      top: 1rem;
+    }
+
+    a:hover,
+    a:focus {
+      background-color: yellow;
+      font-size: 18px;
+    }
+
+    input:focus {
+      background-color: yellow;
+      width: 250px;
+    }
+
+    h1 {
+      color: green;
+    }
+
+    .special-paragraph {
+      font-family: Georgia, serif;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th {
+      background-color: #d9ead3;
+    }
+
+    th,
+    td {
+      padding: 0.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to main content</a>
+
+  <img src="dandelion_logo.jpeg" alt="The Dandelion Project logo" style="width:500px;height:600px;">
+
+  <figure>
+    <img src="dandelion_logo.jpeg" alt="The Dandelion Project logo" style="width:500px;height:600px;" aria-describedby="description">
+    <figcaption id="description">
+      "The word dandelion written in black ink. The 'L' in the word dandelion is the stem of a drawn dandelion with multi-colored seeds blowing in the wind symbolizing the spreading of nature-based mindfulness throughout the world."
+    </figcaption>
+  </figure>
+
+  <main id="main">
+    <h1 style="background-color:powderblue;font-family:sans-serif; font-size: 72px;">The Dandelion Project</h1>
+
+    <h2>What is the Dandelion Project?</h2>
+    <p class="special-paragraph">The <sup>Dandelion Project</sup> strives to share nature-based mindfulness with communities through <strong>guided experiences</strong>.</p>
+
+    <h2><em>What is mindfulness?</em></h2>
+    <p>Mindfulness is the practice of being present and fully engaged with whatever we are doing, without distraction or judgment.</p>
+
+    <h2>What happens when <sub>nature</sub> and mindfulness are combined?</h2>
+    <p>When nature and mindfulness are combined, it can create a powerful experience that promotes</p>
+    <ul>
+      <li>relaxation</li>
+      <li>reduces stress</li>
+      <li>enhances overall well-being</li>
+    </ul>
+
+    <p>Being in nature can help us feel more connected to the world around us, while mindfulness can help us appreciate and fully experience the beauty of nature. Next time you are outdoors, consider taking a moment to practice mindfulness and connect with the natural world around you in one of the following ways</p>
+    <ol>
+      <li>Sit quietly and listen to the sounds around you</li>
+      <li>Observe the colors and textures of plants and trees</li>
+      <li>Take slow, deep breaths and focus on the sensation of air entering and leaving your body</li>
+    </ol>
+
+    <p>For more information on the benefits of nature-based mindfulness,<a href="https://www.ummhealth.org/simply-well/rooted-in-calm-embracing-mindfulness-in-nature" target="_blank" rel="noopener noreferrer">Visit Simply Well!</a></p>
+
+    <h2>Try these simple experiences.</h2>
+
+    <table style="width: 50%">
+      <tr>
+        <th scope="col">Listen</th>
+        <th scope="col">Notice</th>
+        <th scope="col">Touch</th>
+      </tr>
+      <tr>
+        <td>To a bird song</td>
+        <td>The details of a leaf</td>
+        <td>The grass</td>
+      </tr>
+      <tr>
+        <td>To your steps as you walk</td>
+        <td>Light and shadow</td>
+        <td>The bark of a tree</td>
+      </tr>
+    </table>
+
+    <h2>Select how familiar you are with mindfulness using the choices below.</h2>
+
+    <form action="/action_page.php" method="post">
+      <fieldset>
+        <legend>Select how familiar you are with mindfulness using the choices below.</legend>
+        <input type="radio" id="daily" name="familiar" value="daily">
+        <label for="daily">Practice daily</label><br>
+        <input type="radio" id="alittle" name="familiar" value="alittle">
+        <label for="alittle">A little</label><br>
+        <input type="radio" id="whatsmindfulness" name="familiar" value="whatsmindfulness">
+        <label for="whatsmindfulness">What's mindfulness?</label>
+      </fieldset>
+
+      <p>Enter your first name and email below then click the submit button to subscribe to our newsletter.</p>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="email">Email address:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+</body>
+</html>
